@@ -1,0 +1,682 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 5, 2016, Aug 5, 2016 2:06:57 PM
+    Author     : Russ
+*/
+
+
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:375px iPhone6 Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px){
+    
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:400px  iPhone6 Plus Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:400px){
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:568px   iPhone5 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:568px){
+    .homeContent{
+        @include span-columns(6);
+        @include shift(2);
+        margin-top: 8em;
+    }
+    .commercial{
+        right: -630px;
+    }
+    #pollSlider-button{
+        right:82px;
+        top:4%;
+    }
+    .commercial .commercialContent{
+        margin-top: 18.5em;
+        margin-left: 20em;
+    }
+    .second {
+        min-height:144em;
+        .nav{
+            height:4em;
+            ul.upper-menu{
+                @include span-columns(9);
+                @include shift(1);
+                display: flex;
+                margin-top:.5em;
+            }
+            .secondSocialIcons{
+                @include span-columns(2);
+                @include shift(10);
+                @include omega();
+                margin-top:-2.2em;
+                display: flex;
+                padding-right:5px;
+            }
+        }
+    }
+    .ourWork{
+        background-position-y: 47px;
+        height:21em;
+        .nonSkew {
+            h2{
+                top:3.5em;
+            }
+            p{
+                top:18em;
+            }
+            .blue-button.parallelogram{
+                left:-4.5em;
+            }
+        }
+        .resultsArea{
+            height: 123em;
+        }
+    }
+    .ourTeam{
+        height:17em;
+        .rightSide{
+            width: 50%;
+            right: -60%;
+            
+            .nonSkew {
+                h2{
+                    top:.5em;
+                    left:-6em;
+                    font-size: 2.5em;
+                }
+                p{
+                    left: -12.5em;
+                }
+                .blue-button.parallelogram{
+                    top: 11em;
+                    right: 0em;
+                }
+            }
+        }
+        
+    }
+    .clientArea{
+        h2{
+            font-size: 3.5em;
+        }
+        h3{
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+        .leftClients{
+            @include span-columns(6);
+            padding:1em 1em 1em 2em;
+        }
+        .rightClients{
+            @include span-columns(6);
+            @include omega();
+            .quoteBox{
+                span{
+                    ul{
+                        li{
+                            a{
+                                margin-top:-4.5em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .commercialLogos{
+        padding:0 3em;
+        span{
+            @include span-columns(3);
+            padding:1em;
+            img{
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    .latestNewsArea {
+        .newsHeader {
+            h2{
+                font-size: 2em;
+                margin-left:1%;
+            }
+        }
+        .newsSocialIcons{
+            padding-left:5em;
+            a{
+                .fa{
+                    margin-left:12px;
+                }
+            }
+        }
+    }
+    .latestNewsArea {
+        .thePost {
+            .firstHalf{
+                height: 200px;
+            }
+            .secondHalf{
+                height: 200px;
+                padding:3em 2em;
+                h2{
+                    font-size: 1.5em;
+                }
+                .blue-button.parallelogram{
+                        width:120px;
+                    
+                }
+            }
+            
+        }
+    }
+    .subscribeArea{
+        padding:0 3em;
+       
+    }
+    .contactArea{
+        height:17em;
+        h2{
+            font-size: 3.5em;
+        }
+    }
+    .footer{
+        padding: 2em 1em 0 1em;
+         min-height:15em;
+        .footerInfo{
+            @include span-columns(4);
+            margin-top:2em;
+            a{
+                font-size: .6em;
+            }
+        }
+        .footerMenu{
+            @include span-columns(3);
+        }
+        .footerSocialIcons{
+            @include span-columns(5);
+            @include omega();
+            display: flex;
+        }
+        p.copyright{
+            top:3em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:660px iPhone6 Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:660px){
+    .homeContent{
+        margin-top:12em;
+    }
+    .commercial{
+        right:-88%;
+        .commercialContent{
+           margin-left: 24em;
+        }
+    }
+    #pollSlider-button{
+        right: 112px;
+        top: 6%;
+    }
+    .ourWork{
+        background-position-x: initial;
+        background-position-y: inherit;
+        height: 21em;
+        .leftShade{
+            left:-77%;
+            
+        }
+        .nonSkew{
+            h2{
+                line-height: 1em;
+                font-size: 3em;
+                left:-5em;
+                top:2.5em;
+            }
+            p{
+                top: 15em;
+                left: -6.5em;
+            }
+            .blue-button.parallelogram{
+                left:5.5em;
+            }
+        }
+        .resultsArea{
+            height:36em;
+            .resultsImg{
+                display:block;
+                height:26em;
+                h2{
+                    font-size:1em;
+                    letter-spacing: 1px;
+                }
+                .blue-button.parallelogram{
+                    bottom:0;
+                }
+            }
+        }
+    }
+    .second{
+        min-height: 57em;
+    }
+    .ourTeam{
+        height:20em;
+        .rightSide{
+            .nonSkew{
+                h2{
+                    left:-7em;
+                }
+                p{
+                    left:-15em;
+                }
+                .blue-button.parallelogram{
+                    right:2em;
+                }
+            }
+        }
+    }
+    .clientArea {
+        .rightClients {
+            .quoteBox {
+                p{
+                    padding: 1.3em 0;
+                }
+            }
+        }
+    }
+    .commercialText{
+        p{
+            padding:4em 8em;
+            letter-spacing: 1px;
+        }
+    }
+    .latestNewsArea {
+        .newsHeader {
+            h2{
+                font-size: 2.5em;
+            }
+        }
+        .newsSocialIcons{
+            h3{
+                font-size: 1.2em;
+            }
+            a{
+                .fa{
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+    .resultsImg{
+        @include span-columns(4);
+    }
+    .resultsImg:nth-last-child{
+        @include span-columns(4);
+        @include omega();
+    }
+    .emailLink .gform_wrapper .top_label div.ginput_container{
+        margin-left: 60%;
+        margin-top: -3em;
+        width:100%;
+    }
+    .emailLink .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]){
+        padding: 13px 4px 13px 30px;
+    }
+    .emailLink .blue-button.parallelogram{
+        left:22%;
+    }
+    .contactArea{
+        height:20em;
+        h2{
+            padding-top:1.5em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:736px   iPhone6 Plus Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:736px){
+    .commercial{
+        right:-76%;
+    }
+    .ourWork{
+        height:22em;
+        .nonSkew{
+            h2{
+                top:1em;
+            }
+        }
+        .leftShade{
+            left:-67%;
+        }
+        .resultsArea {
+            .resultsSection {
+                h2{
+                    font-size: 3em;
+                }
+                p{
+                    font-size: 1.1em;
+                    letter-spacing: 2px;
+                }
+            }
+            .resultsImg{
+                height:28em;
+            }
+        }
+    }
+    .ourTeam{
+        height:22em;
+        .rightSide{
+            .nonSkew{
+                h2{
+                    font-size: 3.5em;
+                    top:1em;
+                    left:-6em;
+                }
+                p{
+                    font-size: 1em;
+                    left:-11.5em;
+                }
+                .blue-button.parallelogram{
+                    right:12em;
+                    top:14em;
+                    width:12em;
+                    text-align:center;
+                    
+                }
+            }
+        }
+    }
+    .clientArea {
+        .rightClients {
+            .quoteBox {
+                p{
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+    .commercialText{
+        p{
+            font-size: 1.1em;
+        }
+    }
+    .contactArea{
+        height:22em;
+    }
+    .footer{
+        .footerInfo{
+            font-size:.8em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:768px iPad Portrait
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px){
+   
+    .header{
+        .socialIcons{
+            top:2em;
+            right:4em;
+        }
+    }
+    .nav{
+        ul.menu{
+            @include span-columns(8);
+            @include shift(1);
+            display:flex;
+            justify-content:space-around;
+            margin-top:2em;
+            li{
+                float:left;
+                text-transform:uppercase;
+                border-right:solid 1px #fff;
+                padding-right:1em;
+                a{
+                    color:#fff;
+                }
+            }
+        } 
+    }
+    .homeContent{
+        @include span-columns(7);
+        margin-top: 30em;
+        h2{
+          font-size:6em;  
+        }
+        h3{
+           font-size: 1.7em;
+           letter-spacing: 1px;
+        } 
+        p{
+            font-size: 1.5em;
+            padding: 0 3em; 
+        }
+        a.button{
+            width:15em;
+            padding:1em 2em;
+            font-size: 1.3em;
+        }
+        
+    }
+    #pollSlider-button{
+        top:13%;
+        span{
+            .fa{
+                font-size: 4em;
+            }
+            p{
+                font-size:1em;
+            }
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+    #pollSlider-button span:nth-child(1){
+        padding-left:4em;
+    }
+    #pollSlider-button span:nth-child(4){
+        padding:0;
+        position: relative;
+        top:-1em;
+    }
+    .second {
+        .nav {
+            ul.menu{
+                display:none;
+            }
+            ul.upper-menu{
+                @include span-columns(7);
+                @include shift(3);
+                display: flex;
+                margin-top:1em;
+            }
+            .secondSocialIcons{
+                margin-top: -1.7em;
+            }
+        }
+    }
+    .ourWork {
+       .nonSkew {
+           h2{
+               top:1.5em;
+           }
+           p{
+               top:17em
+           }
+           .blue-button.parallelogram{
+               top:14em;
+           }
+           
+       }
+   }
+   .ourTeam {
+       .rightSide {
+           .nonSkew {
+               .blue-button.parallelogram{
+                    right: -2%;
+                    top: 15em;
+               }
+           }
+       }
+   }
+   .clientArea {
+       .rightClients {
+           span.leftArrow{
+               margin-top:6em;
+           }
+           span.rightArrow{
+               margin-top:6em;
+           }
+           .quoteBox {
+               p{
+                   letter-spacing: 2px;
+               }
+           }
+       }
+   }
+   .latestNewsArea {
+       .newsSocialIcons{
+            padding-left: 10em;
+       }
+       .thePost{
+           .firstHalf{
+               height:273px;
+           }
+           .secondHalf{
+               height:273px;
+               span.date{
+                   display: block;
+                   margin-top:1em;
+                   p{
+                       font-size: 1.2em;
+                   }
+               }
+               h2{
+                    font-size: 1.8em;
+                    padding: 0 1em;
+               }
+           }
+       }
+   }
+   
+   .emailLink .blue-button.parallelogram {
+        left: 26%;
+    }
+    .emailLink .gform_wrapper .top_label div.ginput_container{
+        margin-left: 80%;
+    }
+    .contactArea{
+        h2{
+            font-size:4em;
+        }
+        p{
+            font-size:1.2em;
+        }
+    }
+    .footer{
+        .footerInfo{
+            font-size:1em;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1024px       ipad Landscape
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px){
+    .nav{
+        ul.menu{
+           @include span-columns(7);
+            @include shift(3); 
+            display: flex;
+            margin-top:2.3em;
+            li{
+                padding-right:2em;
+            }
+        }
+    }
+    .homeContent{
+        margin-top:26em;
+    }
+    .commercial{
+        right:-53%;
+    }
+    #pollSlider-button{
+        top: 10%;
+        right: 168px;
+    }
+    .commercial {
+        .commercialContent{
+            margin-top: 35.5em;
+            margin-left:31em;
+        }
+        h3{
+            font-size: 4.7em;
+            letter-spacing: 1px;
+        }   
+        
+        a.button{
+            width:15em;
+            padding:1em 2em;
+            font-size: 1.3em;
+        }
+    }
+    .ourWork{
+        height:31em;
+        .leftShade{
+            left:-39%;
+        }
+    }
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1140px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1140px){
+    
+}
+
+
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1240px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1240px){
+    
+}
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+	   only screen and (min-resolution:144dpi) {
+
+
+}
+
+
+
+
+

@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 17, 2016, 12:27:51 PM
+    Author     : Russ
+*/
+
+// COLORS
+
+$lighter-blue:rgb(60, 151, 210);
+$light-blue-trans:rgba(60, 151, 210, .5);
+$light-blue-trans-2:rgba(60, 151, 210, .8);
+$text-blue:rgb(56, 72, 87);
+$arrow-blue:rgb(74, 114, 165);
+$text-gray:rgb(147, 149, 152);
+
+// FONTS
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('./assets/fonts/leaguegothic-italic-webfont.eot');
+    src: url('./assets/fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('./assets/fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('./assets/fonts/leaguegothic-italic-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* Italic */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('./assets/fonts/leaguegothic-regular-webfont.eot');
+    src: url('./assets/fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('./assets/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('./assets/fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('./assets/fonts/leaguegothic-condensed-regular-webfont.eot');
+    src: url('./assets/fonts/leaguegothic-condensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/leaguegothic-condensed-regular-webfont.woff') format('woff'),
+         url('./assets/fonts/leaguegothic-condensed-regular-webfont.ttf') format('truetype'),
+         url('./assets/fonts/leaguegothic-condensed-regular-webfont.svg#league_gothic_condensed-Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Condensed Italic */
+@font-face {
+    font-family: 'League Gothic Condensed';
+    src: url('./assets/fonts/leaguegothic-condensed-italic-webfont.eot');
+    src: url('./assets/fonts/leaguegothic-condensed-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/leaguegothic-condensed-italic-webfont.woff') format('woff'),
+         url('./assets/fonts/leaguegothic-condensed-italic-webfont.ttf') format('truetype'),
+         url('./assets/fonts/leaguegothic-condensed-italic-webfont.svg#league_gothic_condensed_itaRg') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+//BUTTONS
+.button{
+    display:inline-block;
+    //ont-size:2em;
+    padding:.5em 2em;
+    text-decoration:none;
+    color:#fff;
+    border: 1px solid #fff;
+    background:transparent;
+}
+.parallelogram{
+  
+    
+    transform: skew(-30deg);
+    border-radius:0;
+    
+}
+.skewFix{
+    display: inline-block;
+    transform: skew(30deg);
+}
+.blue-button.parallelogram{
+    display:block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding:.5em 2em;
+    background:rgb(60, 151, 210);
+}
