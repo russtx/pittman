@@ -17,7 +17,7 @@
                                     
                                     
                                 </a>
-                                <a href="tel:5405488233">(540) 548-8233</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:info@pittmancontruction.com">info@pittmancontruction.com</a>
+                                <a href="tel:5405488233">(540) 548-8233</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;<a href="mailto:info@pittmancontruction.com">info@pittmancontruction.com</a>
                             </div>
                             
                             

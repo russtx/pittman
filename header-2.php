@@ -34,7 +34,7 @@
 					
 
 					
-                                        <div class="navContainer">
+                                        <div class="navContainer-2">
                                             <nav class="nav" role="navigation">
                                                <input class="menu-btn" type="checkbox" id="menu-btn" />	
                                                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>

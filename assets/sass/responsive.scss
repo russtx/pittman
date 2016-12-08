@@ -15,8 +15,12 @@ and open the template in the editor.
     RESPONSIVE      min-width:375px iPhone6 Portrait
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:375px){
-    
-    
+    .second{
+        min-height: 142em;
+    }
+    .resultsArea{
+        height:125em;
+    }
 }
 
 
@@ -24,7 +28,10 @@ and open the template in the editor.
     RESPONSIVE      min-width:400px  iPhone6 Plus Portrait
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:400px){
-    
+    .ourTeam .rightSide .nonSkew .blue-button.parallelogram{
+        top: 10em;
+        right: -1.5em;
+    }
 }
 
 
@@ -47,6 +54,15 @@ and open the template in the editor.
     .commercial .commercialContent{
         margin-top: 18.5em;
         margin-left: 20em;
+    }
+    .headerBanner{
+        height:17em;
+        h1{
+            font-size: 3em;
+        }
+        p{
+            top:9em;
+        }
     }
     .second {
         min-height:144em;
@@ -71,15 +87,21 @@ and open the template in the editor.
     .ourWork{
         background-position-y: 47px;
         height:21em;
-        .nonSkew {
+        .leftShade{
+            width:69%;
+        }
+        .nonSkew{
             h2{
-                top:3.5em;
+               margin-top:2em; 
+               left:-8.5em;
             }
             p{
-                top:18em;
+                margin-top:14em;
+                left:-9em;
             }
             .blue-button.parallelogram{
-                left:-4.5em;
+                margin-top: 12em;
+                left: 4em;
             }
         }
         .resultsArea{
@@ -90,7 +112,7 @@ and open the template in the editor.
         height:17em;
         .rightSide{
             width: 50%;
-            right: -60%;
+            margin-left:60%;
             
             .nonSkew {
                 h2{
@@ -236,6 +258,16 @@ and open the template in the editor.
         right: 112px;
         top: 6%;
     }
+    .headerBanner {
+        height: 20em;
+        h1{
+            font-size: 3.5em;
+            letter-spacing:1px;
+        }
+        p{
+            top:10em;
+        }
+    }
     .ourWork{
         background-position-x: initial;
         background-position-y: inherit;
@@ -246,17 +278,17 @@ and open the template in the editor.
         }
         .nonSkew{
             h2{
-                line-height: 1em;
-                font-size: 3em;
-                left:-5em;
-                top:2.5em;
+                 line-height: 1em;
+                 font-size: 3em;
+                 margin-top: 1em;
+                 left: -5.5em;
             }
             p{
-                top: 15em;
-                left: -6.5em;
+                //top: 15em;
+                //left: -6.5em;
             }
             .blue-button.parallelogram{
-                left:5.5em;
+                //left:5.5em;
             }
         }
         .resultsArea{
@@ -265,8 +297,8 @@ and open the template in the editor.
                 display:block;
                 height:26em;
                 h2{
-                    font-size:1em;
-                    letter-spacing: 1px;
+                    //font-size:1em;
+                    //letter-spacing: 1px;
                 }
                 .blue-button.parallelogram{
                     bottom:0;
@@ -349,6 +381,15 @@ and open the template in the editor.
             padding-top:1.5em;
         }
     }
+    .resultsArea {
+        height: 36em;
+        .resultsImg{
+            h2{
+                font-size:1em;
+                letter-spacing: 1px;
+            }
+        }
+    }
 }
 
 
@@ -359,15 +400,18 @@ and open the template in the editor.
     .commercial{
         right:-76%;
     }
+    .resultsArea{
+        height:38em;
+    }
     .ourWork{
         height:22em;
         .nonSkew{
             h2{
-                top:1em;
+                top:0;
             }
         }
         .leftShade{
-            left:-67%;
+            //left:-67%;
         }
         .resultsArea {
             .resultsSection {
@@ -390,16 +434,16 @@ and open the template in the editor.
             .nonSkew{
                 h2{
                     font-size: 3.5em;
-                    top:1em;
-                    left:-6em;
+                    //top:1em;
+                   left:-6em;
                 }
                 p{
                     font-size: 1em;
                     left:-11.5em;
                 }
                 .blue-button.parallelogram{
-                    right:12em;
-                    top:14em;
+                   right:12em;
+                   top:14em;
                     width:12em;
                     text-align:center;
                     
@@ -461,6 +505,26 @@ and open the template in the editor.
             }
         } 
     }
+    .navContainer-2{
+        .nav{
+            ul.menu{
+                li{
+                    a{
+                        color:$text-blue;
+                    }
+                }
+            }
+        }
+    }
+    .headerBanner {
+        h1{
+            font-size:4em;
+        }
+        p{
+            top: 12em;
+            letter-spacing: 1px;
+        }
+    }
     .homeContent{
         @include span-columns(7);
         margin-top: 30em;
@@ -504,6 +568,17 @@ and open the template in the editor.
         position: relative;
         top:-1em;
     }
+    .resultsArea {
+        height: 44em;
+        .resultsSection{
+            h2{
+                font-size: 3em;
+            }
+            p{
+                font-size: 1.4em;
+            }
+        }
+    }
     .second {
         .nav {
             ul.menu{
@@ -523,13 +598,13 @@ and open the template in the editor.
     .ourWork {
        .nonSkew {
            h2{
-               top:1.5em;
+               //top:1.5em;
            }
            p{
-               top:17em
+               //top:17em
            }
            .blue-button.parallelogram{
-               top:14em;
+               //top:14em;
            }
            
        }
@@ -604,7 +679,15 @@ and open the template in the editor.
         }
     }
 }
-
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:900px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:900px){
+    .commercial {
+        right: -67%;
+        
+    }
+}
 
 /*-------------------------------------------------------------------------------------------*\
     RESPONSIVE      min-width:1024px       ipad Landscape
@@ -621,11 +704,22 @@ and open the template in the editor.
             }
         }
     }
+    .headerBanner {
+        height: 31em;
+        h1{
+            font-size: 5.5em;
+        }
+        p{
+            font-size: 1.2em;
+            top:10.5em;
+        }
+    }
     .homeContent{
         margin-top:26em;
     }
     .commercial{
         right:-53%;
+        width:80%
     }
     #pollSlider-button{
         top: 10%;
@@ -647,10 +741,148 @@ and open the template in the editor.
             font-size: 1.3em;
         }
     }
+    .resultsArea{
+        height:47em;
+        h2{
+            font-size: 4em;
+        }
+        p{
+            letter-spacing: 2px;
+        }
+    }
     .ourWork{
         height:31em;
         .leftShade{
             left:-39%;
+        }
+        .nonSkew{
+            h2{
+                font-size: 4.5em;
+                left:-4em;
+            }
+            p{
+                margin-top: 15em;
+                left: -1em;
+                font-size: 1em;
+                letter-spacing: 1px;
+            }
+            .blue-button.parallelogram{
+                margin-top: 18em;
+                left: 10em;
+            }
+            
+        }
+        .resultsArea{
+            height:44em;
+            
+        }
+    }
+    .second{
+        min-height:80em;
+    }
+    .ourTeam{
+        height:31em;
+        .rightSide{
+            .nonSkew{
+                position:relative;
+                top:6em;
+                h2{
+                    font-size:4.5em;
+                    left:-5.5em;
+                }
+                p{
+                    letter-spacing: 1px;
+                    top:14em;
+                }
+                .blue-button.parallelogram{
+                    top:17em;
+                }
+            }
+        }
+    }
+    .clientArea{
+        h2{
+            font-size:5.5em;
+        }
+        h3{
+            font-size: 1.5em;
+            letter-spacing: 3px;
+            margin-bottom: 3em;
+        }
+        .rightClients{
+            .quoteBox{
+                p{
+                    padding:1.5em 3em;
+                    font-size: 1.3em;
+                }
+                h2{
+                    font-size:2em;
+                    margin-bottom: 0;
+                    padding-bottom: o;
+                }
+                span{
+                    ul{
+                        li{
+                            a{
+                                margin-top: -6.5em;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .commercialText{
+        p{
+            font-size: 1.5em;
+        }
+    }
+    .commercialLogos{
+        span{
+            margin-top:3em;
+        }
+    }
+    .latestNewsArea {
+        .newsSocialIcons{
+            padding-left:17em;
+        }
+        .thePost {
+            .firstHalf{
+                height:366px;
+            }
+            .secondHalf{
+                height:366px;
+                span.date{
+                    margin-top:4em;
+                }
+                h2{
+                    font-size: 2.3em;
+                }
+                .blue-button.parallelogram{
+                    margin-top:3em;
+                }
+            }
+        }
+    }
+    .emailLink {
+        display:block;
+        width:70%;
+        margin:0 auto;
+        .gform_wrapper .top_label div.ginput_container{
+            width:22em;
+            margin-left:60%;
+        }
+    }
+    .contactArea{
+        height:31em;
+        h2{
+            font-size: 6em;
+        }
+    }
+    .footer{
+        .footerSocialIcons{
+            margin-top:2em;
         }
     }
 }
@@ -660,20 +892,177 @@ and open the template in the editor.
     RESPONSIVE      min-width:1140px
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:1140px){
+    .navContainer{
+        @include outer-container;
+    }
+    .headerBanner {
+        height: 39em;
+        h1 {
+            font-size: 7em;
+        }
+        p{
+            font-size: 1.4em;
+            top: 11em;
+            letter-spacing: 2px;
+        }
+    }
+    .resultsArea {
+        height: 50em;
+        .resultsSection{
+            h2{
+                font-size: 4em;
+            }
+        }
+    }
+    .commercial {
+        //right: -41%;
+        
+        .commercialContent{
+            margin-left:38em;
+        }
+    }
+    #pollSlider-button{
+        width: 131px;
+        height: 149px;
+        top:8%;
+    }
     
+    .ourWork{
+        height:39em;
+        .nonSkew{
+            position: relative;
+            top: 3em;
+            h2{
+                font-size: 5.5em; 
+            }
+            p{
+                margin-top: 15em;
+                font-size: 1.2em;
+            }
+            .blue-button.parallelogram{
+                margin-top: 22em;
+            }
+        }
+        .resultsArea{
+            
+            height:50em;
+            .resultsContainer{
+                @include outer-container;
+            }
+        }
+    }
+    .latestNewsArea{
+        max-width: 1128px;
+        margin: 6em auto 0 auto;
+    }
+    .second{
+        min-height:92em;
+        .nav{
+            .navContainer{
+                @include outer-container;
+            }
+        }
+    }
+    .ourTeam{
+        height:40em;
+        .rightSide{
+            .nonSkew{
+                h2{
+                    font-size: 5.5em;
+                }
+                p{
+                    font-size:1.2em;
+                }
+                .blue-button.parallelogram{
+                    top: 22em;
+                }
+            }
+        }
+    }
+    .clientArea{
+        @include outer-container;
+    }
+    .commercialText{
+        @include outer-container;
+    }
+    .commercialLogos{
+        @include outer-container;
+    }
+    .subscribeArea {
+        @include outer-container;
+        h2{
+            font-size: 5em;
+        }
+        h3{
+            font-size: 1.3em;
+            letter-spacing: 1px;
+        }
+    }
+    .emailLink .gform_wrapper .top_label div.ginput_container{
+        width: 25em;
+    }
+    .contactArea {
+        height: 40em;
+        h2{
+            padding-top:2.5em;
+        }
+    }
 }
 
 
 /*-------------------------------------------------------------------------------------------*\
-    RESPONSIVE      min-width:1240px
+    RESPONSIVE      min-width:1300px
 \*--------------------------------------------------------------------------------------------*/
-@media only screen and (min-width:1240px){
-    
+@media only screen and (min-width:1300px){
+    .commercial {
+        //right: -30%;
+        .commercialContent {
+            margin-left: 44em;
+        }
+    }
 }
-@media only screen and (-webkit-min-device-pixel-ratio:1.5),
-	   only screen and (min-resolution:144dpi) {
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1600px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1600px){
+    .commercial {
+        //right: -21%;
+        .commercialContent {
+            margin-left: 46em;
+        }
+    }
+    .ourWork {
+        height: 44em;
+        .nonSkew{
+            top:7em;
+        }
+    }
+    .ourTeam {
+        height: 44em;
+        .rightSide{
+            .nonSkew{
+                right:10%;
+            }
+        }
+    }
+    .contactArea {
+        height: 44em;
+        h2{
+            padding-top:3.5em;
+        }
+    }
+}
 
-
+/*-------------------------------------------------------------------------------------------*\
+    RESPONSIVE      min-width:1760-px
+\*--------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1760px){
+    .commercial {
+        //right: -30%;
+        .commercialContent {
+            margin-left: 50em;
+        }
+    }
 }
 
 

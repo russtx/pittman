@@ -75,8 +75,7 @@
                     
                     <!-- nav -->
                     <nav class="nav secondNav" role="navigation">
-                       <input class="menu-btn" type="checkbox" id="menu-btn" />	
-                       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                        <div class="navContainer">
                         <?php html5blank_nav(); ?>
                     
                        <div class="secondSocialIcons">
@@ -86,7 +85,7 @@
                             <a href="#"><i class="fa fa-houzz" aria-hidden="true"></i></a>
                         </div>
                     
-                    
+                        </div><!--navContainer -->
                     </nav><!-- /nav -->
                     <div class="ourWork">
                         <div class="leftShade">
@@ -110,7 +109,7 @@
                        
                         
                          <div class="resultsArea">
-                             
+                             <div class="resultsContainer"> 
                               <div class="resultsSection">
                                 <h2>PROVEN RESULTS</h2>
                                 <p>ON A WIDE RANGE OF CONSTRUCTION PROJECTS</p>
@@ -138,7 +137,7 @@
                              <?php endwhile; ?>
                              
                             
-                             
+                             </div><!-- resultsContainer -->  
                         </div><!-- resultsArea -->
                     </div><!-- ourWork -->
                     
@@ -255,7 +254,7 @@
 
                                         <span class="divider"></span>
 
-                                         <a class="blue-button parallelogram" href="#"><span class="skewFix">LEARN MORE</span></a>
+                                         <a class="blue-button parallelogram" href="#"><span class="skewFix">CONTACT US</span></a>
                                          
                             </div>
                             <div class="triangle"></div>

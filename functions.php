@@ -565,6 +565,78 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
     
+    register_taxonomy_for_object_type('category', 'gallery'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'gallery');
+    register_post_type('gallery', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Galllery Images', 'gallery'), // Rename these to suit
+            'singular_name' => __('Galllery Image', 'gallery'),
+            'add_new' => __('Add New', 'gallery'),
+            'add_new_item' => __('Add New Galllery Images', 'gallery'),
+            'edit' => __('Edit', 'gallery'),
+            'edit_item' => __('Edit Galllery Images', 'gallery'),
+            'new_item' => __('New Galllery Images', 'gallery'),
+            'view' => __('View Galllery Images', 'gallery'),
+            'view_item' => __('View Galllery Images', 'gallery'),
+            'search_items' => __('Search Galllery Images', 'gallery'),
+            'not_found' => __('No Galllery Images found', 'gallery'),
+            'not_found_in_trash' => __('No Galllery Imagess found in Trash', 'gallery')
+        ),
+        'menu_icon' => 'dashicons-images-alt',    
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    
+    register_taxonomy_for_object_type('category', 'focus'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'focus');
+    register_post_type('focus', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Areas Of Focus', 'focus'), // Rename these to suit
+            'singular_name' => __('Area Of Focus', 'focus'),
+            'add_new' => __('Add New', 'focus'),
+            'add_new_item' => __('Add New Areas Of Focus', 'focus'),
+            'edit' => __('Edit', 'focus'),
+            'edit_item' => __('Edit Areas Of Focus', 'focus'),
+            'new_item' => __('New Areas Of Focus', 'focus'),
+            'view' => __('View Areas Of Focus', 'focus'),
+            'view_item' => __('View Areas Of Focus', 'focus'),
+            'search_items' => __('Search Areas Of Focus', 'focus'),
+            'not_found' => __('No Areas Of Focuss found', 'focus'),
+            'not_found_in_trash' => __('No Areas Of Focus found in Trash', 'focus')
+        ),
+        'menu_icon' => 'dashicons-welcome-view-site',     
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    
 }
 
 /*------------------------------------*\
