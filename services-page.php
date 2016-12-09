@@ -23,22 +23,26 @@
                              
                              
                              
-                                     <?php    
-                              $args = array( 'post_type' => 'services','order' => 'ASC', 
-                                  'posts_per_page' => '3' );  
-                              $loop = new WP_Query( $args );while ( $loop->have_posts() ) : $loop->the_post('resultsPost');?>        
-                                
-                                <div class="resultsImg">  
-                                  <?php the_post_thumbnail('full'); ?>
-                                    <h2><?php the_title(); ?></h2><br /> 
-                                    <h3><?php echo get_post_meta($post->ID, 'sub-title', true); ?></h3>
-                                    <a class="blue-button parallelogram" href="#"><span class="skewFix">LEARN MORE</span></a>
-                                </div>
-                             
-                             
-                                
-                              
-                             <?php endwhile; ?>
+                                     <div class="resultsImg">
+                                <a href="<?php echo home_url(); ?>/commercial-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commercial-img.png" alt="commercial" >
+                                <h2>COMMERCIAL</h2><br> 
+                                <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
+                                    <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/commercial-construction/"><span class="skewFix">LEARN MORE</span></a>
+                            </div>
+                            
+                            <div class="resultsImg">
+                                <a href="<?php echo home_url(); ?>/residential-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/residential-img.png" alt="residential" >
+                                <h2>RESIDENTIAL</h2><br> 
+                                <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
+                                    <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/residential-construction/"><span class="skewFix">LEARN MORE</span></a>
+                            </div>
+                            
+                            <div class="resultsImg">
+                                <a href="<?php echo home_url(); ?>/land-development/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/land-develpment-img.png" alt="land-developmentl" >
+                                <h2>LAND DEVELOPMENT</h2><br> 
+                                    <h3>SUBTITLE HERE AND HERE AND HERE</h3>
+                                    <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/land-development/"><span class="skewFix">LEARN MORE</span></a>
+                            </div>
                              
                             
                              </div><!-- resultsContainer -->  
@@ -48,7 +52,7 @@
                         <div class="contactArea">
                             <h2>LET'S GET STARTED</h2><br />
                             <p>WITH YOUR RESIDENTIAL AND COMMERCIAL PROJECT</p>
-                            <a class="button parallelogram" href="#"><span class="skewFix">CONTACT US</span></a>
+                            <a class="button parallelogram" href="<?php echo home_url(); ?>/contact-us/"><span class="skewFix">CONTACT US</span></a>
                         </div>
                         
                          <div class="clearfix"></div>
@@ -92,7 +96,7 @@
 
                                         <span class="divider"></span>
 
-                                         <a class="blue-button parallelogram" href="#"><span class="skewFix">CONTACT US</span></a>
+                                         <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/contact-us/"><span class="skewFix">CONTACT US</span></a>
                                          
                             </div>
                             <div class="triangle"></div>

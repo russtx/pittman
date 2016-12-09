@@ -1,8 +1,8 @@
-<?php get_header(); ?>
+<?php get_header('2'); ?>
 
 	<main role="main">
 		<!-- section -->
-		<section>
+                <section class="mainContent">
 
 			<h1><?php the_title(); ?></h1>
 
@@ -40,6 +40,5 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

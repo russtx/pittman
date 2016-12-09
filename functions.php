@@ -637,6 +637,42 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
     
+    register_taxonomy_for_object_type('category', 'work'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'work');
+    register_post_type('work', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Our Work', 'work'), // Rename these to suit
+            'singular_name' => __('Area Of Focus', 'work'),
+            'add_new' => __('Add New', 'work'),
+            'add_new_item' => __('Add New Our Work', 'work'),
+            'edit' => __('Edit', 'work'),
+            'edit_item' => __('Edit Our Work', 'work'),
+            'new_item' => __('New Our Work', 'work'),
+            'view' => __('View Our Work', 'work'),
+            'view_item' => __('View Our Work', 'work'),
+            'search_items' => __('Search Our Work', 'work'),
+            'not_found' => __('No Our Works found', 'work'),
+            'not_found_in_trash' => __('No Our Work found in Trash', 'work')
+        ),
+        'menu_icon' => 'dashicons-portfolio',     
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'custom-fields',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+    
 }
 
 /*------------------------------------*\
