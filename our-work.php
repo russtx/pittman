@@ -15,7 +15,7 @@
                         <div class="resultsSection">
                             <h2>QUALITY SINCE XXXX</h2>
                             <p>EACH PROJECT IS THE PURSUIT OF PERFECTION</p>
-                        </div>
+                    </div>
                     </div>
 
                     <div class="commercialPostContainer">
@@ -51,7 +51,7 @@
                                      
 
                                     <div class="commercialPost">
-                                        <h3><?php the_title(); ?></h3>
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h3><?php the_title(); ?></h3></a>
                                         
                                         <div class="postInfo">
                                             <h4>Category:&nbsp; </h4><span class="category">&nbsp;&nbsp; <h4><?php the_category();?></h4></span><br />
@@ -106,7 +106,7 @@
                                      
 
                                     <div class="commercialPost">
-                                        <h3><?php the_title(); ?></h3>
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h3><?php the_title(); ?></h3></a>
                                         
                                         <div class="postInfo">
                                             <h4>Category:&nbsp; </h4><span class="category">&nbsp;&nbsp; <h4><?php the_category();?></h4></span><br />
@@ -161,7 +161,7 @@
                                      
 
                                     <div class="commercialPost">
-                                        <h3><?php the_title(); ?></h3>
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h3><?php the_title(); ?></h3></a>
                                         
                                         <div class="postInfo">
                                             <h4>Category:&nbsp; </h4><span class="category">&nbsp;&nbsp; <h4><?php the_category();?></h4></span><br />
@@ -217,10 +217,13 @@
                         
                         <div class="thePost">
                             
-                            <div class="firstHalf">
+                            <div class="firstHalf container " >
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                        <?php the_post_thumbnail('full'); ?>
                                 </a>
+                                <div class="textbox">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text">READ MORE</p></a>
+                                </div>
                             </div>    
                             
                             

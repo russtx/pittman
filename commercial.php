@@ -197,11 +197,14 @@
                         
                         <div class="thePost">
                             
-                            <div class="firstHalf">
+                            <div class="firstHalf container " >
                                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                        <?php the_post_thumbnail('full'); ?>
                                 </a>
-                            </div>    
+                                <div class="textbox">
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text">READ MORE</p></a>
+                                </div>
+                            </div> 
                             
                             
                             <div class="secondHalf" >

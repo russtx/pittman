@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('2'); ?>
 
 	<main role="main">
 		<!-- section -->

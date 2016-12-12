@@ -21,6 +21,9 @@ and open the template in the editor.
     .resultsArea{
         height:125em;
     }
+    .leftArrow-2, .rightArrow-2{
+        margin-top:4em;
+    }
 }
 
 
@@ -58,10 +61,11 @@ and open the template in the editor.
     .headerBanner{
         height:17em;
         h1{
-            font-size: 3em;
+            font-size: 2.5em;
+            padding: 0 2em;
         }
         p{
-            top:9em;
+            top:6em;
         }
     }
     .second {
@@ -313,8 +317,25 @@ and open the template in the editor.
             @include shift(3);
         }
     }
+    .leftArrow-2, .rightArrow-2 {
+        margin-top: 6em;
+        padding-left: 1.5em;
+    }
+    .aboutContent{
+        p{
+            @include span-columns(8);
+            @include shift(2);
+        }
+    }
+    .newsContent{
+        p{
+            padding: 0 5em;
+        }
+    }
 }
-
+.container .textbox{
+        margin-top: 15%;
+}
 
 /*-------------------------------------------------------------------------------------------*\
     RESPONSIVE      min-width:660px iPhone6 Landscape
@@ -336,11 +357,11 @@ and open the template in the editor.
     .headerBanner {
         height: 20em;
         h1{
-            font-size: 3.5em;
+            font-size: 3em;
             letter-spacing:1px;
         }
         p{
-            top:10em;
+            top:7em;
         }
     }
     .ourWork{
@@ -475,6 +496,58 @@ and open the template in the editor.
     .FocusArea{
         margin-top:3em;
     }
+    .leftArrow-2, .rightArrow-2 {
+        margin-top: 7em;
+    }
+    .gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half{
+        float:left!important;
+    }
+    .contactContent{
+        @include span-columns(8);
+        margin-top:3em;
+        padding: 0 5em;
+        
+    }
+    .contactForm{
+        @include span-columns(8);
+        #field_2_6{
+            float: right!important;
+            clear: none;
+            margin-top:-25em;
+        }
+        #field_2_7{
+            float: right!important;
+            clear: none;
+            margin-top:-18em;
+
+        }
+        .gform_wrapper textarea.large{
+             height: 238px!important;
+        }
+        .gform_wrapper .gform_footer{
+            width:50%;
+            position: relative;
+            left:25%;
+            text-align:center;
+            margin-top:39em;
+            margin-bottom: 4em;
+        }
+        
+    }
+    .contactInfo{
+        @include span-columns(4);
+        @include omega();
+    }
+    .container .textbox {
+        margin-top: 22%;
+    }
+    .container p{
+        margin-left: 26%;
+        font-size: 2.5em;
+    }
+    .text {
+        padding-top: 17px;
+    }
 }
 
 
@@ -558,6 +631,9 @@ and open the template in the editor.
             font-size:.8em;
         }
     }
+    .leftArrow-2, .rightArrow-2 {
+        margin-top: 8em;
+    }
 }
 
 
@@ -602,12 +678,22 @@ and open the template in the editor.
         }
     }
     .headerBanner {
+        margin-top:6em;
         h1{
-            font-size:4em;
+            font-size:3em;
         }
         p{
-            top: 12em;
+            font-size: 1.2em;
+            top: 4em;
             letter-spacing: 1px;
+        }
+    }
+    .logo{
+        float: none;
+        top: 61px;
+        left: 43%;
+        img{
+            width:7em
         }
     }
     .commercialPostContainer{
@@ -797,6 +883,31 @@ and open the template in the editor.
                 
             }
         }
+        .recentPostSocials{
+            font-size: 2.5em;
+        }
+    }
+    
+    .leftArrow-2{
+        padding-left: 2.5em;
+    }
+    .aboutContent{
+        p{
+            font-size: 1.2em;
+        }
+    }
+    .ourTeamMembers span h3{
+        font-size: 1.3em;
+    }
+    .container p {
+        margin-left: 23%;
+        font-size: 3em;
+    }
+    .container .textbox {
+        margin-top: 26%;
+    }
+    .text {
+        padding-top: 24px;
     }
 }
 /*-------------------------------------------------------------------------------------------*\
@@ -827,11 +938,18 @@ and open the template in the editor.
     .headerBanner {
         height: 31em;
         h1{
-            font-size: 5.5em;
+            font-size: 5em;
         }
         p{
-            font-size: 1.2em;
-            top:10.5em;
+            font-size: 1.5em;
+            top: 4.5em;
+        }
+    }
+    .logo{
+        top: 20px;
+        left: 8%;
+        img{
+            
         }
     }
     .commercialPostContainer {
@@ -1047,6 +1165,27 @@ and open the template in the editor.
             padding: 0 5em;
         }
     }
+    .leftArrow-2, .rightArrow-2 {
+        margin-top: 12em;
+    }
+    .leftArrow-2 {
+        padding-left: 3.5em;
+    }
+    .contactContainer{
+        @include outer-container;
+    }
+    .contactInfo{
+        font-size: 1.2em;
+    }
+    .newsContent {
+        @include outer-container;
+        p {
+            padding: 0 7em;
+        }
+    }
+    .container p{
+        font-size: 4em;
+    }
 }
 
 
@@ -1060,11 +1199,11 @@ and open the template in the editor.
     .headerBanner {
         height: 39em;
         h1 {
-            font-size: 7em;
+            font-size: 6em;
         }
         p{
-            font-size: 1.4em;
-            top: 11em;
+            font-size: 1.8em;
+            top: 5em;
             letter-spacing: 2px;
         }
     }
@@ -1168,6 +1307,9 @@ and open the template in the editor.
         h2{
             padding-top:2.5em;
         }
+    }
+    .aboutImages{
+        margin-top:3em;
     }
 }
 

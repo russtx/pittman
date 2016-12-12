@@ -35,6 +35,21 @@
                         $('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
                         $('#description').html($(this).attr('alt'));
                     });
+                //slideout
+                    
+    
+                    $("div.btn").hover(function () {
+                        $("div.in").toggle("slide", { direction: "left" }, 200);
+                    });
+                    
+                    //slideout
+                    
+    
+                    $("div.btn-2").hover(function () {
+                        $("div.in-2").toggle("slide", { direction: "right" }, 200);
+                    });
+
+                   
 		//end
 	});
 	

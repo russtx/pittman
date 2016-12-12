@@ -120,7 +120,17 @@ input:focus {
         }
     }
 }
-
+.logo{
+    display: block;
+    width: 14%;
+    float: left;
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    img{
+        width:5em;
+    }
+}
 /* nav */
 .upper-menu{
     display:none;
@@ -759,6 +769,10 @@ nav input[type="checkbox"]{
     background:url(./assets/images/about-background.jpg);
     background-size: cover;
 }
+.banner-8{
+    background:url(./assets/images/single-background.jpg);
+    background-size: cover;
+}
 .headerBanner{
     width:100%;
     height:14em;
@@ -768,25 +782,27 @@ nav input[type="checkbox"]{
     margin: 45px 0 3px 0;
     color:#fff;
     h1{
-        font-size: 2.5em;
+        font-size: 2em;
+        padding: 0 1em;
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 0;
         position: relative;
-        top:2em;
+        top:1em;
     }
     p{
         font-size: .8em;
         text-align: center;
         position: relative;
-        top:6em;
+        top:4em;
     }
 }
 .postBox{
     //box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.8);
 }
 .page-template-commercial, .page-template-residential, .page-template-land-development,
-.page-template-our-work, .page-template-news, .page-template-about{
+.page-template-our-work, .page-template-news, .page-template-about, .page-template-contact,
+.post-template-default{
     .resultsArea{
         background: transparent;
         height: 8em;
@@ -926,6 +942,9 @@ nav input[type="checkbox"]{
         justify-content: space-around;
         border-top: 1px solid $text-gray;
         padding-top:1em;
+        font-size: 1.5em;
+        margin-top:1em;
+        margin-bottom: 2em;
     }
     p{
         display:block;
@@ -948,6 +967,9 @@ nav input[type="checkbox"]{
     }
     
 }
+.aboutContainer{
+    @include outer-container;
+}
 .aboutContent{
     p{
         padding:0 2em;
@@ -955,9 +977,91 @@ nav input[type="checkbox"]{
         line-height: 2em;
     }
 }
+.teamContainer{
+    @include outer-container;
+}
+.leftArrow-2{
+     @include span-columns(1);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 17.3px 10px 0;
+    border-color: transparent $blue-arrow transparent transparent;
+    margin-top: 3em;
+}
+.rightArrow-2{
+    @include span-columns(1);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent $blue-arrow;
+    margin-top:3em;
+}
+.ourTeamMembers{
+    @include span-columns(3.3);
+    padding:1em;
+    span{
+        
+        h3{
+            color:$lighter-blue;
+            font-size: .8em;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: .5em;
+            margin-bottom: .1em;
+        }
+    }
+    span.title{
+        display: block;
+        margin-bottom: 3em;
+    }
+}
 
-
-
+.contactContent{
+    display: block;
+    padding: 0 2em;
+    color:$text-gray;
+    line-height: 2em;
+}
+.contactInfo{
+    margin-bottom: 2em;
+    text-align:center;
+    span.contactPhone{
+        display:block;
+        margin-top:1em;
+        margin-bottom:1em;
+    }
+}
+span.returnLink{
+    display: block;
+    margin-left:2em;
+    margin-top:2em;
+    p{
+        margin-bottom: .2em;
+        a{
+            color:$lighter-blue;
+            text-decoration: underline;
+        }
+    }
+}
+.newsContent{
+    display: block;
+    margin: 1em 4em;
+    line-height: 2em;
+    color:$text-gray;
+    p{
+        font-size: 1.2em;
+        
+    }
+    .newsContentImage{
+        img{
+            display:block;
+            margin:0 auto;
+        }
+    }
+    
+}
 
 /*------------------------------------*\
     IMAGES
@@ -1017,8 +1121,37 @@ nav input[type="checkbox"]{
         padding: 8px 4px 8px 30px;
     }
 }
+.gform_wrapper h3.gform_title{
+     display: none;
+}
+.contactForm{
+    ::-webkit-input-placeholder { color:#fff; background:$text-blue;  }
+    :-moz-placeholder { opacity: 1; color:#fff; background:$text-blue;  } /* Firefox 18- */
+    ::-moz-placeholder { opacity: 1; color:#fff; background:$text-blue;  } /* firefox 19+ */
+    :-ms-input-placeholder { color:#fff; background:$text-blue;  } /* ie */
+    input:-moz-placeholder { color:#fff; background:$text-blue;  }
+
+    [type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea{
+        background:$text-blue;
+    }
+    .gform_wrapper{
+        padding: 0 2em;
+        margin-top: -9em!important;
+    }
+    button, [type='button'], [type='reset'], [type='submit']{
+        //transform: skew(30deg);
+        width: 80%!important;
+        margin: 0 auto !important;
+        display: block;
+        border-radius: 0;
+    }
+    .gform_wrapper .gform_footer{
+        transform: skew(-30deg);
+    }
+    
+}
 /*------------------------------------*\
-    TEST
+    slider
 \*------------------------------------*/
 .commercial{
     height:100vh;
@@ -1077,7 +1210,140 @@ nav input[type="checkbox"]{
     }
     
 }
+/*------------------------------------*\
+    HOVERS
+\*------------------------------------*/
+.homeContent a.button:hover{
+    background:$light-blue-trans;
+    color:#fff;
+}
+.blue-button.parallelogram:hover{
+    border:$lighter-blue 1px solid;
+    background:#fff;
+    color: $lighter-blue;
+}
+button:hover, button:focus, [type='button']:hover, [type='button']:focus, [type='reset']:hover, [type='reset']:focus, [type='submit']:hover, [type='submit']:focus{
+    background:#fff;
+    color: $lighter-blue;
+}
+a.parallelogram:hover{
+    border:$lighter-blue 1px solid;
+    background:#fff;
+    color: $lighter-blue;
+}
+.socialIcons a:hover{
+    color:$fa-blue;
+}
+.second .nav .secondSocialIcons a:hover{
+    color:$blue-arrow;
+}
+.latestNewsArea .newsSocialIcons a .fa:hover{
+    color:$blue-arrow;
+}
+.navContainer-2 .nav ul.menu li a:hover{
+    color:$blue-arrow;
+}
+.nav ul.menu li a:hover{
+    color:$blue-arrow;
+}
+/*------------------------------------*\
+    TESTS
+\*------------------------------------*/
 
+   div.bg { float:left;margin: 0 20px 0 0; width: 100px; height: 80px; background: rgba(0, 0, 0, .8); color:#fff; border: 1px solid black; position: relative;border-radius:4px; }
+div.in { margin: 0px; width: 100%; height: 100%; background: red; position: relative; }
+div.btn { float:left;background: orange; border: 1px solid black; position: relative;border-radius:4px;cursor:pointer;line-height:10px;padding:10px 20px;}
+
+
+div.bg-2 { float:left;margin: 0 20px 0 0; width: 100px; height: 80px; background: green; border: 1px solid black; position: relative;border-radius:4px; }
+div.in-2 { margin: 0px; width: 100%; height: 100%; background: red; position: relative; }
+div.btn-2 { float:left;background: orange; border: 1px solid black; position: relative;border-radius:4px;cursor:pointer;line-height:10px;padding:10px 20px;}
+
+.target
+{
+z-index:-1;
+position:fixed;
+left:120px;
+width:100px;
+height:100px;
+background:blue;
+}
+div.overlord
+{
+float:left;
+z-index:999;
+width:100px;
+height:100px;
+background:red;
+transition:width 2s;
+-webkit-transition:width 2s; /* Safari */
+}
+
+div.overlord:hover
+{
+z-index:999;
+width:300px;
+}
+#slideout {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout_inner {
+  position: fixed;
+  top: 40px;
+  left: -100vw;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+#slideout:hover {
+  left: 50%;
+}
+#slideout:hover #slideout_inner {
+  left: 0;
+}
+//new slider
+
+.container {
+    position:relative;
+    overflow:hidden;
+    p{
+       //margin-top: -.7em; 
+       margin-left: 30%;
+       font-size: 1em;
+       color: #fff;
+    }
+}
+.container .textbox {
+width:100%;
+height:33%;
+margin-top:20%;
+position:absolute;
+top:0;
+left:0;
+margin-left:-100vw;
+
+//border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+//-webkit-box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+//box-shadow: inset 0px 0px 5px 2px rgba(255,255,255,.75);
+}
+.container:hover .textbox {
+margin-left:0;
+}
+.text {
+padding-top: 13px;
+}
+.textbox {
+-webkit-transition: all 0.9s ease;
+transition: all 0.9s ease;
+}
 
 /*------------------------------------*\
 	TYPOGRAPHY
