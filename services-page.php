@@ -23,22 +23,42 @@
                              
                              
                              
-                                     <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/commercial-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commercial-img.png" alt="commercial" >
+                                     <div class="resultsImg ">
+                                         <a href="<?php echo home_url(); ?>/commercial-construction/">
+                                             <div class="container-2">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commercial-img.png" alt="commercial" >
+                                                <div class="textbox-2">
+                                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                                </div>
+                                            </div>             
+                                                 
                                 <h2>COMMERCIAL</h2><br> 
                                 <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/commercial-construction/"><span class="skewFix">LEARN MORE</span></a>
                             </div>
                             
                             <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/residential-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/residential-img.png" alt="residential" >
+                                <a href="<?php echo home_url(); ?>/residential-construction/">
+                                    <div class="container-2">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/residential-img.png" alt="residential" >
+                                        <div class="textbox-2">
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                        </div>
+                                    </div> 
+                                    
                                 <h2>RESIDENTIAL</h2><br> 
                                 <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/residential-construction/"><span class="skewFix">LEARN MORE</span></a>
                             </div>
                             
                             <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/land-development/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/land-develpment-img.png" alt="land-developmentl" >
+                                <a href="<?php echo home_url(); ?>/land-development/">
+                                    <div class="container-2">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/land-develpment-img.png" alt="land-developmentl" >
+                                    <div class="textbox-2">
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                    </div>
+                                    </div> 
                                 <h2>LAND DEVELOPMENT</h2><br> 
                                     <h3>SUBTITLE HERE AND HERE AND HERE</h3>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/land-development/"><span class="skewFix">LEARN MORE</span></a>

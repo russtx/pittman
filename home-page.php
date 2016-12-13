@@ -5,69 +5,74 @@
 		<section class="mainSection homeSection">
 
 			
-                    <div class="residentialSlide" id="leftslide">
-                    
-                        <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+                    <div class="hometop">
+        <div class="redArea red">
 
-                                <!-- article -->
-                                <article id="post-<?php the_ID(); ?>" <?php post_class('mainContent homeContent'); ?>>
+             <div class="res " >
 
-                                    <h2>RESIDENTIAL</h2>
+                    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-                                    <h3>QUALITY RESULTS &amp; DEPENDABLE WORK</h3>
+                            <!-- article -->
+                            <article id="post-<?php the_ID(); ?>" <?php post_class('mainContent homeContent'); ?>>
 
-                                        <?php the_content(); ?>
-                                    
-                                    <a class="button parallelogram" href="<?php echo home_url(); ?>/residential-construction/"><span class="skewFix">LEARN MORE</span></a>
+                                <h2>RESIDENTIAL</h2>
 
-                                        <?php comments_template( '', true ); // Remove if you don't want comments ?>
+                                <h3>QUALITY RESULTS &amp; DEPENDABLE WORK</h3>
 
-                                        <br class="clear">
+                                    <?php the_content(); ?>
 
-                                        <?php edit_post_link(); ?>
+                                <a class="button parallelogram" href="<?php echo home_url(); ?>/residential-construction/"><span class="skewFix">LEARN MORE</span></a>
 
-                                </article>
-                                <!-- /article -->
-                                
-                                
- 
-                        <?php endwhile; ?>
-                                
+                                    <?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-                        <?php else: ?>
-                                
-                          
-                        
-                    </div>   
-                    
-                          
+                                    <br class="clear">
 
-			<!-- article -->
-			<article>
+                                    <?php edit_post_link(); ?>
 
-				<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+                            </article>
+                            <!-- /article -->
 
-			</article>
-			<!-- /article -->
 
-		<?php endif; ?>
-                        
-                        <div class="commercial pollSlider" id="rightSlide">
-                            <div class="commercialContent">
-                                <h3>COMMERCIAL</h3>
-                                <a class="button parallelogram" href="<?php echo home_url(); ?>/commercial-construction/"><span class="skewFix">LEARN MORE</span></a>
-                            </div>
-                        </div>
-                        <div id="pollSlider-button">
-                            <span><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                            <span><p>NEXT:</p></span>
-                            <p>COMMERCIAL</p>
-                            <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-                        </div>
-                        
-                        <div class="arrows">
-                            <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                        </div>
+
+                    <?php endwhile; ?>
+
+
+                    <?php else: ?>
+                    <!-- article -->
+                            <article>
+
+                                    <h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+
+                            </article>
+                            <!-- /article -->
+
+                    <?php endif; ?>
+
+
+            </div><!-- res --> 
+
+        </div><!--redArea -->
+        <div class=" blueArea blue">
+
+            <div class="commercial  " >
+                <div class="commercialContent">
+                    <h3>COMMERCIAL</h3>
+                    <a class="button parallelogram" href="<?php echo home_url(); ?>/commercial-construction/"><span class="skewFix">LEARN MORE</span></a>
+                </div>
+            </div><!-- commercial -->
+            <div id="pollSlider-button">
+                <span><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+                <span><p>NEXT:</p></span>
+                <p>COMMERCIAL</p>
+                <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+            </div>
+
+
+        </div><!-- blueArea -->
+                <div class="arrows">
+                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                </div>        
+    </div> <!--homeTop -->         
 
 		</section><!-- homeSection -->
                 <div class="clearfix"></div>
@@ -111,39 +116,60 @@
                          <div class="resultsArea">
                              <div class="resultsContainer"> 
                               <div class="resultsSection">
-                                <h2>PROVEN RESULTS</h2>
-                                <p>ON A WIDE RANGE OF CONSTRUCTION PROJECTS</p>
+                                <h2>CONSTRUCTION</h2>
+                                <p>EXCELLENCE SINCE XXXX.</p>
                                
                                 
                             </div><!-- resultsSection -->  
                              
                              
                              
-                            <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/commercial-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commercial-img.png" alt="commercial" >
+                                     <div class="resultsImg ">
+                                         <a href="<?php echo home_url(); ?>/commercial-construction/">
+                                             <div class="container-2">
+                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commercial-img.png" alt="commercial" >
+                                                <div class="textbox-2">
+                                                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                                </div>
+                                            </div>             
+                                                 
                                 <h2>COMMERCIAL</h2><br> 
                                 <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/commercial-construction/"><span class="skewFix">LEARN MORE</span></a>
                             </div>
                             
                             <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/residential-construction/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/residential-img.png" alt="residential" >
+                                <a href="<?php echo home_url(); ?>/residential-construction/">
+                                    <div class="container-2">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/residential-img.png" alt="residential" >
+                                        <div class="textbox-2">
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                        </div>
+                                    </div> 
+                                    
                                 <h2>RESIDENTIAL</h2><br> 
                                 <h3>SUBTITLE HERE AND HERE AND HERE</h3></a>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/residential-construction/"><span class="skewFix">LEARN MORE</span></a>
                             </div>
                             
                             <div class="resultsImg">
-                                <a href="<?php echo home_url(); ?>/land-development/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/land-develpment-img.png" alt="land-developmentl" >
+                                <a href="<?php echo home_url(); ?>/land-development/">
+                                    <div class="container-2">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/land-develpment-img.png" alt="land-developmentl" >
+                                    <div class="textbox-2">
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><p class="text-2"></p></a>
+                                    </div>
+                                    </div> 
                                 <h2>LAND DEVELOPMENT</h2><br> 
                                     <h3>SUBTITLE HERE AND HERE AND HERE</h3>
                                     <a class="blue-button parallelogram" href="<?php echo home_url(); ?>/land-development/"><span class="skewFix">LEARN MORE</span></a>
                             </div>
-                            
                              
                             
                              </div><!-- resultsContainer -->  
                         </div><!-- resultsArea -->
+                        
+                        
                     </div><!-- ourWork -->
                     
                     

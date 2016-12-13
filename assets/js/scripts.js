@@ -5,24 +5,9 @@
 		'use strict';
 		
 		// DOM ready, take it away
-               $(document).ready(function()
-                {
-                  $('#pollSlider-button').click(function() {
-                    if($(this).css("margin-right") == "200px")
-                    {
-                        $('.pollSlider').animate({"margin-right": '-=200'});
-                        $('#pollSlider-button').animate({"margin-right": '-=200'});
-                    }
-                    else
-                    {
-                        $('.pollSlider').animate({"margin-right": '+=200'});
-                        $('#pollSlider-button').animate({"margin-right": '+=200'});
-                    }
+               
 
 
-                  });
-                 });     
- 
                 //more
                 $(".arrows").click(function() {
                     $('html,body').animate({
@@ -48,6 +33,29 @@
                     $("div.btn-2").hover(function () {
                         $("div.in-2").toggle("slide", { direction: "right" }, 200);
                     });
+                    //test
+                    
+                       var red = $('.red'),
+                        blue = $('.blue');
+
+                    red.click(function() {
+                        red.stop().animate({
+                            left: '-' + 0 - red.width() + 'px'
+                        }, 400);
+                        blue.stop().animate({
+                            left: '0%'
+                        }, 400);
+                    });
+
+                    blue.click(function() {
+                        blue.stop().animate({
+                            left: '70%'
+                        }, 400);
+                        red.stop().animate({
+                            left: '0%'
+                        }, 400);
+                    });
+                    
 
                    
 		//end

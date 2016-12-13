@@ -24,6 +24,9 @@ and open the template in the editor.
     .leftArrow-2, .rightArrow-2{
         margin-top:4em;
     }
+    .arrows{
+        padding-top: 58em;
+    }
 }
 
 
@@ -35,6 +38,13 @@ and open the template in the editor.
         top: 10em;
         right: -1.5em;
     }
+    .homeContent{
+        right: 80%;
+        margin-top: 82%;
+    }
+    .arrows {
+        padding-top: 64em;
+    }
 }
 
 
@@ -43,20 +53,21 @@ and open the template in the editor.
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:568px){
     .homeContent{
-        @include span-columns(6);
-        @include shift(2);
-        margin-top: 8em;
+        right: 40%;
+        margin-top: 27%;
     }
     .commercial{
-        right: -630px;
+        //right: -630px;
     }
     #pollSlider-button{
-        right:82px;
-        top:4%;
+        top: -28%;
     }
     .commercial .commercialContent{
-        margin-top: 18.5em;
-        margin-left: 20em;
+        margin-top: 11%;
+        margin-left: 17%;
+    }
+    .arrows {
+        padding-top: 26em;
     }
     .headerBanner{
         height:17em;
@@ -342,17 +353,20 @@ and open the template in the editor.
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:660px){
     .homeContent{
-        margin-top:12em;
+        //margin-top:12em;
     }
     .commercial{
-        right:-88%;
+        //right:-88%;
         .commercialContent{
-           margin-left: 24em;
+           //margin-left: 24em;
         }
     }
     #pollSlider-button{
-        right: 112px;
-        top: 6%;
+        //right: 112px;
+        //top: 6%;
+    }
+    .arrows {
+        padding-top: 31em;
     }
     .headerBanner {
         height: 20em;
@@ -548,6 +562,9 @@ and open the template in the editor.
     .text {
         padding-top: 17px;
     }
+    .container-2 {
+        width:100%;
+    }
 }
 
 
@@ -556,7 +573,10 @@ and open the template in the editor.
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:736px){
     .commercial{
-        right:-76%;
+        //right:-76%;
+    }
+    .arrows {
+        padding-top: 34em;
     }
     .resultsArea{
         height:38em;
@@ -722,8 +742,8 @@ and open the template in the editor.
         }
     }
     .homeContent{
-        @include span-columns(7);
-        margin-top: 30em;
+        right: 60%;
+        margin-top: 71%;
         h2{
           font-size:6em;  
         }
@@ -742,8 +762,22 @@ and open the template in the editor.
         }
         
     }
+    .commercial{
+        .commercialContent{
+            margin-top: 26%;
+            h3{
+                font-size: 6em
+            }
+            a.button{
+                width:15em;
+                padding:1em 2em;
+                font-size: 1.3em;
+            }
+        }
+    }
     #pollSlider-button{
-        top:13%;
+        top:-19%;
+        left:-3%;
         span{
             .fa{
                 font-size: 4em;
@@ -757,12 +791,15 @@ and open the template in the editor.
         }
     }
     #pollSlider-button span:nth-child(1){
-        padding-left:4em;
+        //padding-left:4em;
     }
     #pollSlider-button span:nth-child(4){
         padding:0;
         position: relative;
         top:-1em;
+    }
+    .arrows {
+        padding-top: 88em;
     }
     .resultsArea {
         height: 44em;
@@ -915,7 +952,7 @@ and open the template in the editor.
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:900px){
     .commercial {
-        right: -67%;
+        //right: -67%;
         
     }
 }
@@ -989,20 +1026,20 @@ and open the template in the editor.
     
     
     .homeContent{
-        margin-top:26em;
+        right: 54%;
+        margin-top: 41%;
     }
     .commercial{
-        right:-53%;
-        width:80%
+        //right:-53%;
+        //width:80%
     }
     #pollSlider-button{
-        top: 10%;
-        right: 168px;
+        top: -16%;
+        left: -2%;
     }
     .commercial {
         .commercialContent{
-            margin-top: 35.5em;
-            margin-left:31em;
+                margin-top: 15%;
         }
         h3{
             font-size: 4.7em;
@@ -1014,6 +1051,9 @@ and open the template in the editor.
             padding:1em 2em;
             font-size: 1.3em;
         }
+    }
+    .arrows {
+        padding-top: 66em;
     }
     .resultsArea{
         height:47em;
@@ -1215,19 +1255,24 @@ and open the template in the editor.
             }
         }
     }
+    .homeContent{
+        
+    }
     .commercial {
         //right: -41%;
         
         .commercialContent{
-            margin-left:38em;
+            //margin-left:38em;
         }
     }
     #pollSlider-button{
-        width: 131px;
-        height: 149px;
-        top:8%;
+        //width: 131px;
+        //height: 149px;
+        //top:8%;
     }
-    
+    .arrows{
+        padding-top: 71em;
+    }
     .ourWork{
         height:39em;
         .nonSkew{
@@ -1311,6 +1356,9 @@ and open the template in the editor.
     .aboutImages{
         margin-top:3em;
     }
+    .container-2 {
+        width:300px;
+    }
 }
 
 
@@ -1318,10 +1366,15 @@ and open the template in the editor.
     RESPONSIVE      min-width:1300px
 \*--------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:1300px){
+    .homeContent {
+        right: 54%;
+        margin-top: 35%;
+    }
     .commercial {
         //right: -30%;
         .commercialContent {
-            margin-left: 44em;
+            margin-top: 12%;
+            //margin-left: 44em;
         }
     }
 }
@@ -1332,8 +1385,11 @@ and open the template in the editor.
     .commercial {
         //right: -21%;
         .commercialContent {
-            margin-left: 46em;
+            //margin-left: 46em;
         }
+    }
+    .arrows {
+        padding-top: 76em;
     }
     .ourWork {
         height: 44em;
@@ -1364,7 +1420,7 @@ and open the template in the editor.
     .commercial {
         //right: -30%;
         .commercialContent {
-            margin-left: 50em;
+            //margin-left: 50em;
         }
     }
 }
