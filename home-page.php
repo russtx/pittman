@@ -1,4 +1,4 @@
-<?php /* Template Name: Home Page 2 */ get_header(); ?>
+<?php /* Template Name: Home Page  */ get_header(); ?>
 
 	<main role="main">
 		<!-- section -->
